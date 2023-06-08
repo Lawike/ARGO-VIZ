@@ -1,0 +1,16 @@
+{
+  "name": "ARGO-VIZ",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^4.3.4"
+  },
+  "dependencies": {
+    "three": "^0.152.2"
+  }
+}
