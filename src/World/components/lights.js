@@ -1,22 +1,18 @@
 import {
   DirectionalLight,
   AmbientLight,
-  HemisphereLight,
+  PointLight,
 } from 'three';
 
 function createLights() {
-  const ambientLight = new AmbientLight('white', 2);
-  const hemisphereLight = new HemisphereLight(
-    'white', // bright sky color
-    'darkslategrey', // dim ground color
-    3, // intensity
-  );
-  const mainLight = new DirectionalLight('white', 2);
+  const ambientLight = new AmbientLight('white', 0.05);
+  // const mainLight = new DirectionalLight('white', 50);
+  const sun = new PointLight('white', 500);
 
   // move the light right, up, and towards us
-  mainLight.position.set(10, 10, 10);
+  sun.position.set(10, 4, 10);
 
-  return { ambientLight, mainLight, hemisphereLight };
+  return { ambientLight, sun };
 }
 
 export { createLights };

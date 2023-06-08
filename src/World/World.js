@@ -3,6 +3,7 @@ import {
   createGridHelper,
 } from './components/helpers.js';
 
+
 import { createCamera } from './components/camera.js';
 import { createMeshGroup} from './components/examples/meshGroup.js';
 import { createScene } from './components/scene.js';
@@ -12,6 +13,8 @@ import { createRenderer } from './systems/renderer.js';
 import { Resizer } from './systems/Resizer.js';
 import { Loop } from './systems/Loop.js';
 import { createControls } from './systems/controls.js';
+
+import { createEarth } from './components/earth/earth.js';
 
 class World {
 
@@ -47,12 +50,13 @@ class World {
       this.#loop.updatables.push(controls);
     }
     // Scene management
-    const { hemisphereLight, ambientLight, mainLight } = createLights();
+    const { ambientLight,sun } = createLights();
     const meshGroup = createMeshGroup();
 
     this.#loop.updatables.push(meshGroup);
 
-    this.#scene.add(ambientLight, hemisphereLight, mainLight);    
+    const earth = createEarth();
+    this.#scene.add(ambientLight, sun, earth);    
     if (dev) this.#scene.add(createAxesHelper(), createGridHelper());
   }
 
