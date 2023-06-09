@@ -19,6 +19,6 @@ npm run build
 ## Credits
 This project is based of :
 - Three.js
-- AGRO Fleet API
+- ARGO Fleet API
 - NASA Earth data
 - Sebastian Lague project : https://github.com/SebLague/Geographical-Adventures/
