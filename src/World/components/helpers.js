@@ -1,4 +1,10 @@
-import { AxesHelper, GridHelper } from 'three';
+import { 
+  AxesHelper,
+  GridHelper,
+  PointLightHelper,
+} from 'three';
+
+import { VertexNormalsHelper } from 'three/addons/helpers/VertexNormalsHelper.js';
 
 function createAxesHelper() {
   const helper = new AxesHelper(3);
@@ -11,4 +17,14 @@ function createGridHelper() {
   return helper;
 }
 
-export { createAxesHelper, createGridHelper };
+function createPointLightHelper(light) {
+  const helper = new PointLightHelper(light, 1);
+  return helper;
+}
+
+function createVertexNormalsHelper(mesh) {
+  const helper = new VertexNormalsHelper( mesh, 0.005, 0xff0000 );
+  return helper;
+}
+
+export { createAxesHelper, createGridHelper, createPointLightHelper, createVertexNormalsHelper };

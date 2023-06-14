@@ -1,11 +1,12 @@
 import {
   createAxesHelper,
   createGridHelper,
+  createPointLightHelper,
+  createVertexNormalsHelper,
 } from './components/helpers.js';
 
 
 import { createCamera } from './components/camera.js';
-import { createMeshGroup} from './components/examples/meshGroup.js';
 import { createScene } from './components/scene.js';
 import { createLights } from './components/lights.js';
 
@@ -14,7 +15,8 @@ import { Resizer } from './systems/Resizer.js';
 import { Loop } from './systems/Loop.js';
 import { createControls } from './systems/controls.js';
 
-import { createEarth } from './components/earth/earth.js';
+import { Earth } from './components/earth/Earth.js';
+import { Float } from './components/float/index.js';
 
 class World {
 
@@ -50,18 +52,26 @@ class World {
       this.#loop.updatables.push(controls);
     }
     // Scene management
-    const { ambientLight,sun } = createLights();
-    const meshGroup = createMeshGroup();
+    const {  sun, ambient } = createLights();
 
-    this.#loop.updatables.push(meshGroup);
-
-    const earth = createEarth();
-    this.#scene.add(ambientLight, sun, earth);    
-    if (dev) this.#scene.add(createAxesHelper(), createGridHelper());
+    this.#scene.add(ambient, sun);    
+    if (dev){
+      this.#scene.add(
+        createAxesHelper(),
+        createGridHelper(),
+        createPointLightHelper(sun),
+       // createVertexNormalsHelper(earth.getMesh()),
+      );
+    }
   }
 
   async init() {
-    // Asynchronous loads
+    const earth = new Earth();
+    const float = new Float();
+
+    this.#loop.updatables.push(earth);
+
+    this.#scene.add(await earth.getMesh(), await float.getMesh());
   }
   // 2. Render the scene
   render() {
