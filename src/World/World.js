@@ -15,7 +15,7 @@ import { Resizer } from './systems/Resizer.js';
 import { Loop } from './systems/Loop.js';
 import { createControls } from './systems/controls.js';
 
-import { Earth } from './components/earth/Earth.js';
+import { Earth } from './components/earth/earth.js';
 import { Float } from './components/float/index.js';
 
 class World {
@@ -67,7 +67,7 @@ class World {
 
   async init() {
     const earth = new Earth();
-    const float = new Float();
+    const float = new Float(36.794009, 5.746497, 1);
 
     this.#loop.updatables.push(earth);
 
