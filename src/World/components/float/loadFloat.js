@@ -1,6 +1,4 @@
-import { Euler, SphereGeometry, Vector3 } from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { GCS } from "../../utils";
 
 /**
  * Load a float object on the scene.
