@@ -1,4 +1,4 @@
-import { MathUtils, Mesh, MeshBasicMaterial, MeshPhongMaterial, MeshStandardMaterial, SphereGeometry, TextureLoader } from "three";
+import { Mesh, MeshPhongMaterial, SphereGeometry, TextureLoader } from "three";
 
 function createEarth() {
   const sphere = new SphereGeometry(1, 512, 256);
@@ -24,7 +24,7 @@ class Earth {
   }
 
   tick(delta) {
-    this.#mesh.rotation.y += MathUtils.degToRad(24) * delta;
+    // this.#mesh.rotation.y += MathUtils.degToRad(24) * delta;
   }
 
   getMesh() {

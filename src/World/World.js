@@ -5,6 +5,7 @@ import {
   createVertexNormalsHelper,
 } from './components/helpers.js';
 
+import { db } from './db/db.js';
 
 import { createCamera } from './components/camera.js';
 import { createScene } from './components/scene.js';
@@ -67,11 +68,12 @@ class World {
 
   async init() {
     const earth = new Earth();
-    const float = new Float(36.794009, 5.746497, 1);
+    const fleet = db.map(element => new Float(element.latitude, element.longitude, 1));
 
     this.#loop.updatables.push(earth);
-
-    this.#scene.add(await earth.getMesh(), await float.getMesh());
+    let fleetMeshes = [];
+    //fleetMeshes = await Promise.all(fleet.map((float) => float.getMesh()));
+    this.#scene.add(await earth.getMesh(), ...fleetMeshes);
   }
   // 2. Render the scene
   render() {
