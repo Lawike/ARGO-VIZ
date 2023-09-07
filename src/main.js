@@ -1,21 +1,11 @@
-import { World } from './World/World.js';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { ArgoSceneModule } from './app/argo-scene/ArgoScene.module.ts';
+
+// Init angular
+platformBrowserDynamic().bootstrapModule(ArgoSceneModule)
+  .catch(err => console.error(err));
 
 // create the main function
-async function main() {
-  // Get a reference to the container element
-  const container =  document.querySelector('#scene-container');
 
-  const renderOnDemand = false;
-  // 1. Create an instance of the World app
-  const world = new World(container, renderOnDemand, import.meta.env.DEV);
-  // complete async tasks
-  await world.init();
-  // 2. Render the scene
-  if (renderOnDemand) world.render();
-  else world.start();
-}
 
-// call main to start the app
-main().catch((err) => {
-  console.log(err);
-});

@@ -1,0 +1,1311 @@
+[
+  {
+    "alertErrorFlags": [
+      "string"
+    ],
+    "alertInfoFlags": [
+      "string"
+    ],
+    "alertStatus": 0,
+    "alertWarningFlags": [
+      "string"
+    ],
+    "battery": {
+      "level": 0,
+      "sourceParameter": "string",
+      "status": "string"
+    },
+    "calibrations": [
+      {
+        "coeff": "string",
+        "comment": "string",
+        "dimLevel": 0,
+        "equation": "string",
+        "parameter": "string"
+      }
+    ],
+    "configurations": {
+      "cycles": {},
+      "missionCycles": {},
+      "phases": [
+        {
+          "cycleTime": 0,
+          "deepestPresAsc": 0,
+          "dimLevel": 0,
+          "downTime": "2023-07-08T10:19:32.411Z",
+          "parkPres": 0,
+          "upTime": "2023-07-08T10:19:32.411Z"
+        }
+      ],
+      "techs": [
+        {
+          "code": "string",
+          "description": "string",
+          "id": 0,
+          "value": "string"
+        }
+      ]
+    },
+    "countryCode": "string",
+    "cycleIds": [
+      {
+        "cycleId": 0,
+        "cycleNumber": 0
+      }
+    ],
+    "cycles": [
+      {
+        "bottomPressure": 0,
+        "bottomSalinity": 0,
+        "bottomTemperature": 0,
+        "dateQc": 0,
+        "directionCode": "string",
+        "endDate": "2023-07-08T10:19:32.411Z",
+        "firstStation": {
+          "date": "2023-07-08T10:19:32.411Z",
+          "direction": "string",
+          "firstProfile": {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.411Z",
+                "timeQc": 0
+              }
+            ]
+          },
+          "id": 0,
+          "lastProfile": {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.411Z",
+                "timeQc": 0
+              }
+            ]
+          },
+          "profiles": [
+            {
+              "measures": [
+                {
+                  "cycleNumber": 0,
+                  "direction": "string",
+                  "latitude": 0,
+                  "longitude": 0,
+                  "platformCode": "string",
+                  "positionQc": 0,
+                  "pres": 0,
+                  "presQc": 0,
+                  "psal": 0,
+                  "psalQc": 0,
+                  "temp": 0,
+                  "tempQc": 0,
+                  "time": "2023-07-08T10:19:32.411Z",
+                  "timeQc": 0
+                }
+              ]
+            }
+          ],
+          "type": "string"
+        },
+        "grounded": true,
+        "id": 0,
+        "lastStation": {
+          "date": "2023-07-08T10:19:32.411Z",
+          "direction": "string",
+          "firstProfile": {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.411Z",
+                "timeQc": 0
+              }
+            ]
+          },
+          "id": 0,
+          "lastProfile": {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.411Z",
+                "timeQc": 0
+              }
+            ]
+          },
+          "profiles": [
+            {
+              "measures": [
+                {
+                  "cycleNumber": 0,
+                  "direction": "string",
+                  "latitude": 0,
+                  "longitude": 0,
+                  "platformCode": "string",
+                  "positionQc": 0,
+                  "pres": 0,
+                  "presQc": 0,
+                  "psal": 0,
+                  "psalQc": 0,
+                  "temp": 0,
+                  "tempQc": 0,
+                  "time": "2023-07-08T10:19:32.411Z",
+                  "timeQc": 0
+                }
+              ]
+            }
+          ],
+          "type": "string"
+        },
+        "lat": 0,
+        "lon": 0,
+        "maxLevel": 0,
+        "pmax": 0,
+        "positionQc": 0,
+        "startDate": "2023-07-08T10:19:32.411Z",
+        "stations": [
+          {
+            "date": "2023-07-08T10:19:32.411Z",
+            "direction": "string",
+            "firstProfile": {
+              "measures": [
+                {
+                  "cycleNumber": 0,
+                  "direction": "string",
+                  "latitude": 0,
+                  "longitude": 0,
+                  "platformCode": "string",
+                  "positionQc": 0,
+                  "pres": 0,
+                  "presQc": 0,
+                  "psal": 0,
+                  "psalQc": 0,
+                  "temp": 0,
+                  "tempQc": 0,
+                  "time": "2023-07-08T10:19:32.411Z",
+                  "timeQc": 0
+                }
+              ]
+            },
+            "id": 0,
+            "lastProfile": {
+              "measures": [
+                {
+                  "cycleNumber": 0,
+                  "direction": "string",
+                  "latitude": 0,
+                  "longitude": 0,
+                  "platformCode": "string",
+                  "positionQc": 0,
+                  "pres": 0,
+                  "presQc": 0,
+                  "psal": 0,
+                  "psalQc": 0,
+                  "temp": 0,
+                  "tempQc": 0,
+                  "time": "2023-07-08T10:19:32.411Z",
+                  "timeQc": 0
+                }
+              ]
+            },
+            "profiles": [
+              {
+                "measures": [
+                  {
+                    "cycleNumber": 0,
+                    "direction": "string",
+                    "latitude": 0,
+                    "longitude": 0,
+                    "platformCode": "string",
+                    "positionQc": 0,
+                    "pres": 0,
+                    "presQc": 0,
+                    "psal": 0,
+                    "psalQc": 0,
+                    "temp": 0,
+                    "tempQc": 0,
+                    "time": "2023-07-08T10:19:32.411Z",
+                    "timeQc": 0
+                  }
+                ]
+              }
+            ],
+            "type": "string"
+          }
+        ],
+        "surfacePressure": 0,
+        "surfaceSalinity": 0,
+        "surfaceTemperature": 0
+      }
+    ],
+    "dataCenter": {
+      "code": "string",
+      "name": "string"
+    },
+    "deployment": {
+      "cruiseName": "string",
+      "lat": 0,
+      "launchDate": "2023-07-08T10:19:32.411Z",
+      "lon": 0,
+      "platform": "string",
+      "principalInvestigatorName": "string",
+      "profilerExperimentId": "string",
+      "qc": 0,
+      "year": 0
+    },
+    "earliestCycle": {
+      "bottomPressure": 0,
+      "bottomSalinity": 0,
+      "bottomTemperature": 0,
+      "dateQc": 0,
+      "directionCode": "string",
+      "endDate": "2023-07-08T10:19:32.411Z",
+      "firstStation": {
+        "date": "2023-07-08T10:19:32.411Z",
+        "direction": "string",
+        "firstProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.411Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "id": 0,
+        "lastProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.411Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "profiles": [
+          {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.411Z",
+                "timeQc": 0
+              }
+            ]
+          }
+        ],
+        "type": "string"
+      },
+      "grounded": true,
+      "id": 0,
+      "lastStation": {
+        "date": "2023-07-08T10:19:32.411Z",
+        "direction": "string",
+        "firstProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.411Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "id": 0,
+        "lastProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.411Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "profiles": [
+          {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.411Z",
+                "timeQc": 0
+              }
+            ]
+          }
+        ],
+        "type": "string"
+      },
+      "lat": 0,
+      "lon": 0,
+      "maxLevel": 0,
+      "pmax": 0,
+      "positionQc": 0,
+      "startDate": "2023-07-08T10:19:32.411Z",
+      "stations": [
+        {
+          "date": "2023-07-08T10:19:32.411Z",
+          "direction": "string",
+          "firstProfile": {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.411Z",
+                "timeQc": 0
+              }
+            ]
+          },
+          "id": 0,
+          "lastProfile": {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.411Z",
+                "timeQc": 0
+              }
+            ]
+          },
+          "profiles": [
+            {
+              "measures": [
+                {
+                  "cycleNumber": 0,
+                  "direction": "string",
+                  "latitude": 0,
+                  "longitude": 0,
+                  "platformCode": "string",
+                  "positionQc": 0,
+                  "pres": 0,
+                  "presQc": 0,
+                  "psal": 0,
+                  "psalQc": 0,
+                  "temp": 0,
+                  "tempQc": 0,
+                  "time": "2023-07-08T10:19:32.411Z",
+                  "timeQc": 0
+                }
+              ]
+            }
+          ],
+          "type": "string"
+        }
+      ],
+      "surfacePressure": 0,
+      "surfaceSalinity": 0,
+      "surfaceTemperature": 0
+    },
+    "firmwareVersion": "string",
+    "firstCycle": {
+      "bottomPressure": 0,
+      "bottomSalinity": 0,
+      "bottomTemperature": 0,
+      "dateQc": 0,
+      "directionCode": "string",
+      "endDate": "2023-07-08T10:19:32.411Z",
+      "firstStation": {
+        "date": "2023-07-08T10:19:32.411Z",
+        "direction": "string",
+        "firstProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.411Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "id": 0,
+        "lastProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.411Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "profiles": [
+          {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.411Z",
+                "timeQc": 0
+              }
+            ]
+          }
+        ],
+        "type": "string"
+      },
+      "grounded": true,
+      "id": 0,
+      "lastStation": {
+        "date": "2023-07-08T10:19:32.411Z",
+        "direction": "string",
+        "firstProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.411Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "id": 0,
+        "lastProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.412Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "profiles": [
+          {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.412Z",
+                "timeQc": 0
+              }
+            ]
+          }
+        ],
+        "type": "string"
+      },
+      "lat": 0,
+      "lon": 0,
+      "maxLevel": 0,
+      "pmax": 0,
+      "positionQc": 0,
+      "startDate": "2023-07-08T10:19:32.412Z",
+      "stations": [
+        {
+          "date": "2023-07-08T10:19:32.412Z",
+          "direction": "string",
+          "firstProfile": {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.412Z",
+                "timeQc": 0
+              }
+            ]
+          },
+          "id": 0,
+          "lastProfile": {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.412Z",
+                "timeQc": 0
+              }
+            ]
+          },
+          "profiles": [
+            {
+              "measures": [
+                {
+                  "cycleNumber": 0,
+                  "direction": "string",
+                  "latitude": 0,
+                  "longitude": 0,
+                  "platformCode": "string",
+                  "positionQc": 0,
+                  "pres": 0,
+                  "presQc": 0,
+                  "psal": 0,
+                  "psalQc": 0,
+                  "temp": 0,
+                  "tempQc": 0,
+                  "time": "2023-07-08T10:19:32.412Z",
+                  "timeQc": 0
+                }
+              ]
+            }
+          ],
+          "type": "string"
+        }
+      ],
+      "surfacePressure": 0,
+      "surfaceSalinity": 0,
+      "surfaceTemperature": 0
+    },
+    "greyListParameters": [
+      "string"
+    ],
+    "institution": {
+      "code": "string",
+      "name": "string"
+    },
+    "lastCycle": {
+      "bottomPressure": 0,
+      "bottomSalinity": 0,
+      "bottomTemperature": 0,
+      "dateQc": 0,
+      "directionCode": "string",
+      "endDate": "2023-07-08T10:19:32.412Z",
+      "firstStation": {
+        "date": "2023-07-08T10:19:32.412Z",
+        "direction": "string",
+        "firstProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.412Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "id": 0,
+        "lastProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.412Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "profiles": [
+          {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.412Z",
+                "timeQc": 0
+              }
+            ]
+          }
+        ],
+        "type": "string"
+      },
+      "grounded": true,
+      "id": 0,
+      "lastStation": {
+        "date": "2023-07-08T10:19:32.412Z",
+        "direction": "string",
+        "firstProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.412Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "id": 0,
+        "lastProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.412Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "profiles": [
+          {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.412Z",
+                "timeQc": 0
+              }
+            ]
+          }
+        ],
+        "type": "string"
+      },
+      "lat": 0,
+      "lon": 0,
+      "maxLevel": 0,
+      "pmax": 0,
+      "positionQc": 0,
+      "startDate": "2023-07-08T10:19:32.412Z",
+      "stations": [
+        {
+          "date": "2023-07-08T10:19:32.412Z",
+          "direction": "string",
+          "firstProfile": {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.412Z",
+                "timeQc": 0
+              }
+            ]
+          },
+          "id": 0,
+          "lastProfile": {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.413Z",
+                "timeQc": 0
+              }
+            ]
+          },
+          "profiles": [
+            {
+              "measures": [
+                {
+                  "cycleNumber": 0,
+                  "direction": "string",
+                  "latitude": 0,
+                  "longitude": 0,
+                  "platformCode": "string",
+                  "positionQc": 0,
+                  "pres": 0,
+                  "presQc": 0,
+                  "psal": 0,
+                  "psalQc": 0,
+                  "temp": 0,
+                  "tempQc": 0,
+                  "time": "2023-07-08T10:19:32.413Z",
+                  "timeQc": 0
+                }
+              ]
+            }
+          ],
+          "type": "string"
+        }
+      ],
+      "surfacePressure": 0,
+      "surfaceSalinity": 0,
+      "surfaceTemperature": 0
+    },
+    "lastCycleBasicInfo": {
+      "bottomMeasure": {
+        "cycleNumber": 0,
+        "direction": "string",
+        "latitude": 0,
+        "longitude": 0,
+        "platformCode": "string",
+        "positionQc": 0,
+        "pres": 0,
+        "presQc": 0,
+        "psal": 0,
+        "psalQc": 0,
+        "temp": 0,
+        "tempQc": 0,
+        "time": "2023-07-08T10:19:32.413Z",
+        "timeQc": 0
+      },
+      "date": "2023-07-08T10:19:32.413Z",
+      "dateQc": 0,
+      "grounded": true,
+      "lat": 0,
+      "lon": 0,
+      "nLevelMax": 0,
+      "numCycle": 0,
+      "pMax": 0,
+      "positionQc": 0,
+      "surfaceDate": "2023-07-08T10:19:32.413Z",
+      "surfaceMeasure": {
+        "cycleNumber": 0,
+        "direction": "string",
+        "latitude": 0,
+        "longitude": 0,
+        "platformCode": "string",
+        "positionQc": 0,
+        "pres": 0,
+        "presQc": 0,
+        "psal": 0,
+        "psalQc": 0,
+        "temp": 0,
+        "tempQc": 0,
+        "time": "2023-07-08T10:19:32.413Z",
+        "timeQc": 0
+      }
+    },
+    "lastFlagSuperHydraulicAlert": "string",
+    "latestCycle": {
+      "bottomPressure": 0,
+      "bottomSalinity": 0,
+      "bottomTemperature": 0,
+      "dateQc": 0,
+      "directionCode": "string",
+      "endDate": "2023-07-08T10:19:32.413Z",
+      "firstStation": {
+        "date": "2023-07-08T10:19:32.413Z",
+        "direction": "string",
+        "firstProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.413Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "id": 0,
+        "lastProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.413Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "profiles": [
+          {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.413Z",
+                "timeQc": 0
+              }
+            ]
+          }
+        ],
+        "type": "string"
+      },
+      "grounded": true,
+      "id": 0,
+      "lastStation": {
+        "date": "2023-07-08T10:19:32.413Z",
+        "direction": "string",
+        "firstProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.414Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "id": 0,
+        "lastProfile": {
+          "measures": [
+            {
+              "cycleNumber": 0,
+              "direction": "string",
+              "latitude": 0,
+              "longitude": 0,
+              "platformCode": "string",
+              "positionQc": 0,
+              "pres": 0,
+              "presQc": 0,
+              "psal": 0,
+              "psalQc": 0,
+              "temp": 0,
+              "tempQc": 0,
+              "time": "2023-07-08T10:19:32.414Z",
+              "timeQc": 0
+            }
+          ]
+        },
+        "profiles": [
+          {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.414Z",
+                "timeQc": 0
+              }
+            ]
+          }
+        ],
+        "type": "string"
+      },
+      "lat": 0,
+      "lon": 0,
+      "maxLevel": 0,
+      "pmax": 0,
+      "positionQc": 0,
+      "startDate": "2023-07-08T10:19:32.414Z",
+      "stations": [
+        {
+          "date": "2023-07-08T10:19:32.414Z",
+          "direction": "string",
+          "firstProfile": {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.414Z",
+                "timeQc": 0
+              }
+            ]
+          },
+          "id": 0,
+          "lastProfile": {
+            "measures": [
+              {
+                "cycleNumber": 0,
+                "direction": "string",
+                "latitude": 0,
+                "longitude": 0,
+                "platformCode": "string",
+                "positionQc": 0,
+                "pres": 0,
+                "presQc": 0,
+                "psal": 0,
+                "psalQc": 0,
+                "temp": 0,
+                "tempQc": 0,
+                "time": "2023-07-08T10:19:32.414Z",
+                "timeQc": 0
+              }
+            ]
+          },
+          "profiles": [
+            {
+              "measures": [
+                {
+                  "cycleNumber": 0,
+                  "direction": "string",
+                  "latitude": 0,
+                  "longitude": 0,
+                  "platformCode": "string",
+                  "positionQc": 0,
+                  "pres": 0,
+                  "presQc": 0,
+                  "psal": 0,
+                  "psalQc": 0,
+                  "temp": 0,
+                  "tempQc": 0,
+                  "time": "2023-07-08T10:19:32.414Z",
+                  "timeQc": 0
+                }
+              ]
+            }
+          ],
+          "type": "string"
+        }
+      ],
+      "surfacePressure": 0,
+      "surfaceSalinity": 0,
+      "surfaceTemperature": 0
+    },
+    "locations": [
+      {
+        "cycleNumber": 0,
+        "date": "2023-07-08T10:19:32.414Z",
+        "dateQc": 0,
+        "lat": 0,
+        "lon": 0,
+        "positionQc": 0
+      }
+    ],
+    "maker": "string",
+    "model": "string",
+    "networks": [
+      "string"
+    ],
+    "owner": "string",
+    "parameters": [
+      {
+        "accuracy": "string",
+        "dimLevel": 0,
+        "id": "string",
+        "resolution": "string",
+        "units": "string"
+      }
+    ],
+    "platform": {
+      "activity": "string",
+      "code": "string",
+      "comment": "string",
+      "description": "string",
+      "name": "string",
+      "type": "string"
+    },
+    "prVersion": "string",
+    "projectName": "string",
+    "projects": [
+      "string"
+    ],
+    "ptt": "string",
+    "sensors": [
+      {
+        "accuracy": 0,
+        "dimLevel": 0,
+        "id": "string",
+        "maker": "string",
+        "model": "string",
+        "resolution": 0,
+        "serial": "string",
+        "units": "string"
+      }
+    ],
+    "serialIMEI": "string",
+    "serialInst": "string",
+    "statusCode": "string",
+    "transmissionSystem": "string",
+    "variables": [
+      "string"
+    ],
+    "wmo": "string"
+  }
+]
