@@ -16,7 +16,15 @@ export default function makeFloat({ loadedFloatObject }) {
         #id;
 
         #vec3;
-
+        /**
+         * Float constructor
+         * @param {Number} latitude 
+         * @param {Number} longitude 
+         * @param {String} countryCode 
+         * @param {String} name 
+         * @param {Number} id 
+         * @param {Number} radius 
+         */
         constructor(latitude, longitude, countryCode, name, id, radius) {
             this.#latitude = latitude;
             this.#longitude = longitude;
@@ -42,6 +50,13 @@ export default function makeFloat({ loadedFloatObject }) {
             return new Vector3(x, y, z);
         }
 
+        /**
+         * Creates the mesh of the float asynchronously.
+         * It waits until the data from the object are loaded before creating the mesh.
+         * @param {THREE.Vector3} position 
+         * @param {Number} scaleFactor 
+         * @returns {Promise<THREE.Mesh>}
+         */
         createMesh(position, scaleFactor = 0.0025) {
             // We need the data from the loaded file to create the objects.
             return loadedFloatObject.then((floatData) => {
