@@ -4,11 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
     "ng": "ng",
     "start": "ng serve",
     "watch": "ng build --watch --configuration development",
+    "build": "ng build",
     "test": "ng test"
   },
   "devDependencies": {
