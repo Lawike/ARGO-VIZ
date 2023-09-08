@@ -21,10 +21,10 @@ export class ArgoSceneComponent implements OnInit {
 async function main() {
   // Get a reference to the container element
   const container =  document.querySelector('#scene-container');
-
   const renderOnDemand = false;
+  const devMode = true;
   // 1. Create an instance of the World app
-  const world = new World(container, renderOnDemand, true);
+  const world = new World(container, renderOnDemand, devMode);
   // complete async tasks
   await world.init();
   // 2. Render the scene

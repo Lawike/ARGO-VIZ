@@ -1,7 +1,8 @@
 import { loadFloat } from "./loadFloat";
 import { makeFloat } from "./Float";
 
-const Float = makeFloat({ loadFloat });
+const loadedFloatObject = loadFloat();
+const Float = makeFloat({ loadedFloatObject });
 
 export default Float;
 

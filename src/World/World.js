@@ -18,6 +18,8 @@ import { createControls } from './systems/controls.js';
 import { Earth } from './components/earth/Earth.js';
 import { Float } from './components/float/index.js';
 
+import { MeshStandardMaterial } from 'three';
+
 import { DB } from './db/db.js';
 const fleetDB = new DB();
 class World {
@@ -70,11 +72,35 @@ class World {
   async init() {
     const earth = new Earth();
     const data = fleetDB.getData({ countryCode: 48, statusCode: 'A' });
-    const fleet = data.map((elem) => new Float(elem.latitude, elem.longitude, 1));
+    const fleet = data.map((elem) => new Float(
+      elem.latitude,
+      elem.longitude,
+      elem.countryCode,
+      elem.name,
+      elem.id,
+      1
+    ));
+    
+    const closeFloatsMap = new Map();
+    for (let index = 0; index < fleet.length; index++) {
+      const distances = [];
+      for (let internalIndex = index + 1; internalIndex < fleet.length; internalIndex++) {
+        const distance = fleet[index].vec3.distanceToSquared(fleet[internalIndex].vec3);
+        if (distance < 0.0001) distances.push(fleet[internalIndex]);
+      }
+      if (distances.length > 0) closeFloatsMap.set(fleet[index].id, distances);
+    }
+
+    
+
+    console.log(closeFloatsMap);
     const meshes = await Promise.all(fleet.map((float) => float.getMesh()));
+    meshes[0].material = new MeshStandardMaterial({
+      color: 'green',
+      flatShading: true,
+    });
     this.#loop.updatables.push(earth);
 
-    console.log(data);
     this.#scene.add(await earth.getMesh(), ...meshes);
   }
   // 2. Render the scene

@@ -24,7 +24,7 @@ class Earth {
   }
 
   tick(delta) {
-    // this.#mesh.rotation.y += MathUtils.degToRad(24) * delta;
+    
   }
 
   getMesh() {
