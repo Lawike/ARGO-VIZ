@@ -5,7 +5,6 @@ import {
   createVertexNormalsHelper,
 } from './components/helpers.js';
 
-import { db } from './db/db.js';
 
 import { createCamera } from './components/camera.js';
 import { createScene } from './components/scene.js';
@@ -16,9 +15,11 @@ import { Resizer } from './systems/Resizer.js';
 import { Loop } from './systems/Loop.js';
 import { createControls } from './systems/controls.js';
 
-import { Earth } from './components/earth/earth.js';
+import { Earth } from './components/earth/Earth.js';
 import { Float } from './components/float/index.js';
 
+import { DB } from './db/db.js';
+const fleetDB = new DB();
 class World {
 
   #camera;
@@ -53,9 +54,9 @@ class World {
       this.#loop.updatables.push(controls);
     }
     // Scene management
-    const {  sun, ambient } = createLights();
+    const {  sun, ambient, antisun } = createLights();
 
-    this.#scene.add(ambient, sun);    
+    this.#scene.add(ambient, sun, antisun);    
     if (dev){
       this.#scene.add(
         createAxesHelper(),
@@ -68,12 +69,13 @@ class World {
 
   async init() {
     const earth = new Earth();
-    const fleet = db.map(element => new Float(element.latitude, element.longitude, 1));
-
+    const data = fleetDB.getData({ countryCode: 48, statusCode: 'A' });
+    const fleet = data.map((elem) => new Float(elem.latitude, elem.longitude, 1));
+    const meshes = await Promise.all(fleet.map((float) => float.getMesh()));
     this.#loop.updatables.push(earth);
-    let fleetMeshes = [];
-    //fleetMeshes = await Promise.all(fleet.map((float) => float.getMesh()));
-    this.#scene.add(await earth.getMesh(), ...fleetMeshes);
+
+    console.log(data);
+    this.#scene.add(await earth.getMesh(), ...meshes);
   }
   // 2. Render the scene
   render() {

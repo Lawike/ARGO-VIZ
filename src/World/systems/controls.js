@@ -8,8 +8,8 @@ function createControls(camera, canvas) {
 
   // this.controls.autoRotate = true;
   controls.enableDamping = true;
-  controls.target.y = 1;
   controls.tick = () => controls.update();
+  controls.minDistance = 1.15;
 
   return controls;
 }
